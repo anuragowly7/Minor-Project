@@ -1,0 +1,178 @@
+<resources>
+
+    <string name="app_name">Blood Bank</string>
+
+    <string-array name="names">
+
+        <item>Select any</item>
+
+        <item>O+</item>
+
+        <item>O-</item>
+
+        <item>A+</item>
+
+        <item>A-</item>
+
+        <item>B+</item>
+
+        <item>B-</item>
+
+        <item>AB+</item>
+
+        <item>AB-</item>
+
+    </string-array>
+
+
+    <string name="title_activity_homescreen">Homescreen</string>
+
+    <string name="title_activity_login">Sign in</string>
+
+
+    <!-- Strings related to login -->
+
+    <string name="prompt_email">Email</string>
+
+    <string name="prompt_password">Password (optional)</string>
+
+    <string name="action_sign_in">Sign in or register</string>
+
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+
+    <string name="error_invalid_password">This password is too short</string>
+
+    <string name="error_incorrect_password">This password is incorrect</string>
+
+    <string name="error_field_required">This field is required</string>
+
+    <string name="banner_home_footer">ca-app-pub-3574223201894561/6327776533</string>
+
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+
+        completions."
+
+    </string>
+
+    <string name="title_activity_chat">chat</string>
+
+    <string name="title_activity_chatt">chatt</string>
+
+    <string name="user_login_user_login_user_login_user_login_user_login_user_login_user_login_user_login_user_login_user_login">User Login User Login User Login User Login User Login User Login User Login User Login User Login User Login</string>
+
+    <string name="register_register_register_register_register_register_register_register_register_register_register_register">Register Register Register Register Register Register Register Register Register Register Register Register</string>
+
+    <string name="admin_login_admin_login_admin_login_admin_login_admin_login_v_admin_login_admin_login_admin_login">Admin Login Admin Login Admin Login Admin Login Admin Login v Admin Login Admin Login Admin Login</string>
+
+    <string name="send_email_to_admin_send_email_to_admin_send_email_to_admin_send_email_to_admin_send_email_to_admin">Send email to admin Send email to admin Send email to admin Send email to admin Send email to admin</string>
+
+    <string name="password">Password</string>
+
+    <string name="guest_login">Guest Login</string>
+
+    <string name="login">Login</string>
+
+    <string name="user_id">User ID</string>
+
+    <string name="about_us">About Us</string>
+
+    <string name="emergency_contact">Emergency Contact</string>
+
+    <string name="blood_bank_app_is_a_federation_of_non_remunerated_voluntary_blood_donors_donor_s_organizations_clubs_and_associations_it_is_working_to_meet_the_needs_for_high_quality_human_blood_and_blood_products_by_promoting_the_regular_non_remunerated_voluntary_blood_donation_all_over_the_country">Blood Bank App is a federation of non-remunerated voluntary blood donors, donor’s organizations, clubs and associations. It is working to meet the needs for high quality human blood and blood products by promoting the regular, non-remunerated voluntary blood donation all over the country.</string>
+
+    <string name="nepal_red_cross_society">Nepal Red Cross Society</string>
+
+    <string name="_01_5006465">01-5006465</string>
+
+    <string name="lalitpur_blood_bank">Lalitpur Blood Bank</string>
+
+    <string name="_01_5006464">01-5006464</string>
+
+    <string name="nobel_blood_transfusion_centre">Nobel Blood Transfusion Centre</string>
+
+    <string name="_01_4110842">01-4110842</string>
+
+    <string name="youth_for_blood">Youth for Blood</string>
+
+    <string name="_984_3552882">984-3552882</string>
+
+    <string name="emergency_contacts">EMERGENCY CONTACTS:</string>
+
+    <string name="log_out">Log Out</string>
+
+    <string name="show_all_blood">Show All Blood</string>
+
+    <string name="search_donors">Search Donors</string>
+
+    <string name="blood">Blood</string>
+
+    <string name="select_blood_group">Select blood group:</string>
+
+    <string name="submit">Submit</string>
+
+    <string name="guest">GUEST</string>
+
+    <string name="your_name_has_been_added_in_the_donor_s_list">Your name has been added in the donor\'s list.</string>
+
+    <string name="you_will_be_notified_when_someone_is_in_need">You will be notified when someone is in need.</string>
+
+    <string name="log_out1">Log out</string>
+
+    <string name="phone_number">Phone number</string>
+
+    <string name="dob">DOB</string>
+
+    <string name="name">Name</string>
+
+    <string name="sex">Sex</string>
+
+    <string name="blood_group">Blood Group</string>
+
+    <string name="back">Back</string>
+
+    <string name="logout">Logout</string>
+
+    <string name="todo">TODO</string>
+
+    <string name="email_id">Email id</string>
+
+    <string name="forgetten_password">Forgetten Password?</string>
+
+    <string name="click_here">Click Here</string>
+
+    <string name="don_t_have_an_account_register_here">Don\'t have an account? Register here:</string>
+
+    <string name="register">Register</string>
+
+    <string name="female">Female</string>
+
+    <string name="male">Male</string>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="sex_">Sex:</string>
+
+    <string name="email_id_">Email ID</string>
+
+    <string name="number">Number</string>
+
+    <string name="dob_dd_mm_yyyy">DOB (DD/MM/YYYY)</string>
+
+    <string name="blood_group_">Blood Group:</string>
+
+    <string name="textview1">TextView1</string>
+
+    <string name="textview2">TextView2</string>
+
+    <string name="textview">TextView</string>
+
+    <string name="enter_email">Enter Email:</string>
+    <string name="addd">TextView3</string>
+    <string name="hint_email" />
+    <string name="address">Address</string>
+    <string name="title_activity_userprofile">activity_userprofile</string>
+
+
+</resources>
