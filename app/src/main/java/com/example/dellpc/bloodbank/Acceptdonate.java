@@ -53,7 +53,7 @@ public class Acceptdonate extends AppCompatActivity {
         accept=(Button)findViewById(R.id.button6);
         remove=(Button)findViewById(R.id.button17);
         ccc=(Button)findViewById(R.id.ccc);
-        logout=(Button)findViewById(R.id.button12);
+        logout=(Button)findViewById(R.id.logout);
         wel=(TextView)findViewById(R.id.textView15);
         donate=(Button)findViewById(R.id.button8);
         profile=(Button)findViewById(R.id.button27);
@@ -136,8 +136,6 @@ public class Acceptdonate extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                progressDialog.setMessage("Logging out...");
-                progressDialog.show();
                 FirebaseAuth.getInstance().signOut();
                 Intent i = new Intent(Acceptdonate.this,Homescreen.class);
                 startActivity(i);

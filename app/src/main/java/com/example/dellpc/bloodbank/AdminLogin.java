@@ -43,7 +43,7 @@ public class AdminLogin extends AppCompatActivity {
                     startActivity(i);
                 }
                 else{
-                    Toast.makeText(getApplicationContext(),"You are not an admin!!!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Invalid!!!",Toast.LENGTH_LONG).show();
                     user.setText("");
                     pass.setText("");
                 }

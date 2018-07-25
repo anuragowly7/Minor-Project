@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,26 +11,13 @@
     tools:context="com.example.dellpc.bloodbank.userprofile">
 
     <TextView
-        android:id="@+id/textView10"
-        android:layout_width="315dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="26dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="35dp"
-        android:background="@drawable/usp"
-        android:textSize="20sp" />
-
-    <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView10"
         android:layout_alignStart="@+id/textView10"
         android:layout_below="@+id/textView10"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="80dp"
         android:text="@string/name"
         android:textColor="@color/colorPrimaryDark" />
 
@@ -39,34 +25,34 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView11"
         android:layout_alignStart="@+id/textView11"
         android:layout_below="@+id/textView11"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="40dp"
         android:text="@string/dob"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_alignLeft="@+id/textView11" />
+        android:textColor="@color/colorPrimaryDark" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView13"
         android:layout_alignStart="@+id/textView13"
         android:layout_below="@+id/textView13"
         android:layout_marginTop="40dp"
         android:text="@string/phone_number"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_alignLeft="@+id/textView13" />
+        android:textColor="@color/colorPrimaryDark" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView17"
         android:layout_alignStart="@+id/textView17"
         android:layout_below="@+id/textView17"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="40dp"
         android:text="@string/sex"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_alignLeft="@+id/textView17" />
+        android:textColor="@color/colorPrimaryDark" />
 
     <TextView
         android:id="@+id/textView19"
@@ -74,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/textView10"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="110dp"
         android:text="@string/blood_group"
         android:textColor="@color/colorPrimaryDark" />
 
@@ -95,56 +81,64 @@
         android:id="@+id/button14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView10"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/textView10"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/mybtnselect"
         android:text="@string/logout" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView23"
         android:layout_alignTop="@+id/textView11"
-        android:layout_toLeftOf="@+id/button14"
-        android:layout_toStartOf="@+id/button14"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:editable="true"
+        android:textColor="@color/colorPrimaryDark"
+        tools:ignore="Deprecated" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView16"
-        android:layout_alignStart="@+id/textView16"
-        android:layout_alignTop="@+id/textView13"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:layout_below="@+id/textView16"
+        android:layout_toStartOf="@+id/button14"
+        android:editable="true"
+        android:textColor="@color/colorPrimaryDark"
+        tools:ignore="Deprecated" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView17"
-        android:layout_alignLeft="@+id/textView22"
-        android:layout_alignStart="@+id/textView22"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:layout_alignBaseline="@+id/textView17"
+        android:layout_toStartOf="@+id/button14"
+        android:editable="true"
+        android:textColor="@color/colorPrimaryDark"
+        tools:ignore="Deprecated" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView23"
         android:layout_alignStart="@+id/textView23"
         android:layout_alignTop="@+id/textView18"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:editable="true"
+        android:textColor="@color/colorPrimaryDark"
+        tools:ignore="Deprecated" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView24"
         android:layout_alignStart="@+id/textView24"
         android:layout_alignTop="@+id/textView19"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:editable="true"
+        android:textColor="@color/colorPrimaryDark"
+        tools:ignore="Deprecated" />
 
     <TextView
         android:id="@+id/textView51"
@@ -152,19 +146,20 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/textView10"
-        android:layout_marginBottom="136dp"
+        android:layout_marginBottom="160dp"
         android:text="Address:"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="14sp" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView54"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView26"
         android:layout_alignStart="@+id/textView26"
         android:layout_alignTop="@+id/textView51"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:editable="true"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/button30"
@@ -173,6 +168,6 @@
         android:layout_alignStart="@+id/textView10"
         android:layout_alignTop="@+id/button11"
         android:background="@drawable/mybtnselect"
-        android:text="EDIT" />
+        android:text="UPDATE" />
 
 </RelativeLayout>

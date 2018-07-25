@@ -24,7 +24,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class userprofile extends AppCompatActivity {
+public class updateprofile extends AppCompatActivity {
     Button back,logout,update;
     TextView a,b,c,d,e,f;
     ProgressDialog progressDialog;
@@ -36,14 +36,14 @@ public class userprofile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_userprofile);
+        setContentView(R.layout.activity_updateprofile);
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String ck = "";
         if (user != null) {
             ck = user.getEmail();
         }
         databaseReference = FirebaseDatabase.getInstance().getReference("Registerdata");
-        progressDialog = new ProgressDialog(userprofile.this);
+        progressDialog = new ProgressDialog(updateprofile.this);
         back=(Button)findViewById(R.id.button11);
         update=(Button)findViewById(R.id.button30);
         logout=(Button)findViewById(R.id.button14);
@@ -55,33 +55,33 @@ public class userprofile extends AppCompatActivity {
         f=(TextView)findViewById(R.id.textView54);
         progressDialog.setMessage("Fetching user's info...");
         FirebaseDatabase.getInstance().getReference("Registerdata").orderByChild("email").equalTo(ck).addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                            String name = snapshot.child("name").getValue(String.class);
-                            String blood = snapshot.child("bloodgrp").getValue(String.class);
-                            String dob = snapshot.child("dob").getValue(String.class);
-                            String sex = snapshot.child("sex").getValue(String.class);
-                            String phone = snapshot.child("number").getValue(String.class);
-                            String address = snapshot.child("address").getValue(String.class);
-                            a.setText(name);
-                            b.setText(dob);
-                            c.setText(phone);
-                            d.setText(sex);
-                            e.setText(blood);
-                            f.setText(address);
-                        }
-                    }
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    String name = snapshot.child("name").getValue(String.class);
+                    String blood = snapshot.child("bloodgrp").getValue(String.class);
+                    String dob = snapshot.child("dob").getValue(String.class);
+                    String sex = snapshot.child("sex").getValue(String.class);
+                    String phone = snapshot.child("number").getValue(String.class);
+                    String address = snapshot.child("address").getValue(String.class);
+                    a.setText(name);
+                    b.setText(dob);
+                    c.setText(phone);
+                    d.setText(sex);
+                    e.setText(blood);
+                    f.setText(address);
+                }
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
 
-                    }
-                });
+            }
+        });
         progressDialog.hide();
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(userprofile.this,Acceptdonate.class);
+                Intent i = new Intent(updateprofile.this,userprofile.class);
                 startActivity(i);
             }
         });
@@ -89,7 +89,7 @@ public class userprofile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
-                Intent i = new Intent(userprofile.this,Homescreen.class);
+                Intent i = new Intent(updateprofile.this,Homescreen.class);
                 startActivity(i);
             }
         });
@@ -97,8 +97,7 @@ public class userprofile extends AppCompatActivity {
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(userprofile.this,updateprofile.class);
-                startActivity(i);
+
             }
         });
 
