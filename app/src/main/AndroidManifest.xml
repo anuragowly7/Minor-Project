@@ -68,8 +68,8 @@
         <activity android:name=".aboutus" />
         <activity android:name=".Listdonor" />
         <activity android:name=".bloodselection_guest" />
-        <activity android:name=".userprofile"/>
-            <activity android:name=".updateprofile"/>
+        <activity android:name=".userprofile" />
+        <activity android:name=".updateprofile" />
     </application>
 
 </manifest>

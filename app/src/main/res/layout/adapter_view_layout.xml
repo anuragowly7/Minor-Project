@@ -13,8 +13,7 @@
         android:layout_weight="40"
         android:gravity="center"
         android:text="@string/textview1"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textAlignment="center" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,7 +27,7 @@
             android:layout_height="60dp"
             android:gravity="center"
             android:text="@string/textview2"
-            android:textColor="@color/colorPrimaryDark" />
+            android:textColor="@android:color/white" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,7 +41,7 @@
                 android:layout_height="60dp"
                 android:gravity="center"
                 android:text="@string/addd"
-                android:textColor="@color/colorPrimaryDark" />
+                android:textColor="@android:color/white" />
     </LinearLayout>
 </LinearLayout>
 </LinearLayout>

@@ -62,7 +62,7 @@
             android:id="@+id/button24"
             android:layout_width="30dip"
             android:layout_height="160dip"
-            android:layout_margin="20dp"
+            android:layout_margin="15dp"
             android:layout_weight="1"
             android:background="@drawable/about"
             android:onClick="aboutClick" />
@@ -71,7 +71,7 @@
             android:id="@+id/button25"
             android:layout_width="30dip"
             android:layout_height="160dip"
-            android:layout_margin="20dp"
+            android:layout_margin="15dp"
             android:layout_weight="1"
             android:background="@drawable/emer"
             android:onClick="buttonClick" />

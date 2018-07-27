@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg1"
+    android:background="@mipmap/xc"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -21,8 +20,11 @@
         android:layout_marginLeft="26dp"
         android:layout_marginStart="26dp"
         android:layout_marginTop="35dp"
-        android:background="@drawable/usp"
-        android:textSize="20sp" />
+        android:text="       Profile"
+        android:textColor="@android:color/white"
+        android:textSize="46sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
 
     <TextView
         android:id="@+id/textView11"
@@ -31,52 +33,58 @@
         android:layout_alignLeft="@+id/textView10"
         android:layout_alignStart="@+id/textView10"
         android:layout_below="@+id/textView10"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="40dp"
         android:text="@string/name"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView11"
         android:layout_alignStart="@+id/textView11"
         android:layout_below="@+id/textView11"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="20dp"
         android:text="@string/dob"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_alignLeft="@+id/textView11" />
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView13"
         android:layout_alignStart="@+id/textView13"
         android:layout_below="@+id/textView13"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:text="@string/phone_number"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_alignLeft="@+id/textView13" />
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView17"
         android:layout_alignStart="@+id/textView17"
         android:layout_below="@+id/textView17"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:text="@string/sex"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_alignLeft="@+id/textView17" />
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_marginBottom="100dp"
+        android:layout_alignLeft="@+id/textView51"
+        android:layout_alignStart="@+id/textView51"
+        android:layout_below="@+id/textView51"
+        android:layout_marginTop="20dp"
         android:text="@string/blood_group"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/button11"
@@ -108,7 +116,8 @@
         android:layout_alignTop="@+id/textView11"
         android:layout_toLeftOf="@+id/button14"
         android:layout_toStartOf="@+id/button14"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView22"
@@ -117,7 +126,8 @@
         android:layout_alignLeft="@+id/textView16"
         android:layout_alignStart="@+id/textView16"
         android:layout_alignTop="@+id/textView13"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView23"
@@ -126,7 +136,8 @@
         android:layout_alignBottom="@+id/textView17"
         android:layout_alignLeft="@+id/textView22"
         android:layout_alignStart="@+id/textView22"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView24"
@@ -135,7 +146,8 @@
         android:layout_alignLeft="@+id/textView23"
         android:layout_alignStart="@+id/textView23"
         android:layout_alignTop="@+id/textView18"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView26"
@@ -144,18 +156,20 @@
         android:layout_alignLeft="@+id/textView24"
         android:layout_alignStart="@+id/textView24"
         android:layout_alignTop="@+id/textView19"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_marginBottom="136dp"
-        android:text="Address:"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="14sp" />
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_below="@+id/textView18"
+        android:layout_marginTop="20dp"
+        android:text="@string/address"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView54"
@@ -164,7 +178,8 @@
         android:layout_alignLeft="@+id/textView26"
         android:layout_alignStart="@+id/textView26"
         android:layout_alignTop="@+id/textView51"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/button30"

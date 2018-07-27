@@ -1,17 +1,14 @@
 package com.example.dellpc.bloodbank;
 
-import android.os.*;
+import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import com.firebase.ui.database.FirebaseListAdapter;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -22,9 +19,6 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
-import static android.R.attr.id;
-import static com.example.dellpc.bloodbank.R.drawable.email;
 
 public class chat extends AppCompatActivity {
     private EditText editText;

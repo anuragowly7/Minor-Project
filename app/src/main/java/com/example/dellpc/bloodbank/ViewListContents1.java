@@ -1,9 +1,7 @@
 package com.example.dellpc.bloodbank;
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -21,8 +19,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-
-import static com.example.dellpc.bloodbank.R.id.listview;
 
 public class ViewListContents1 extends AppCompatActivity {
     DatabaseHandler db;

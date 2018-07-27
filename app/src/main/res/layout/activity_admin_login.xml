@@ -4,7 +4,7 @@
     android:id="@+id/activity_admin_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg1"
+    android:background="@mipmap/xc"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -33,7 +33,7 @@
         android:hint="@string/password"
         android:inputType="textPassword"
         android:text="@string/blood"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@android:color/background_light"
         android:textColorHint="@color/colorPrimaryDark" />
 
     <EditText
@@ -46,7 +46,7 @@
         android:hint="@string/blood"
         android:inputType="textPersonName"
         android:text="@string/blood"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@android:color/background_light"
         android:textColorHint="@color/colorPrimaryDark" />
 
     <Button

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:orientation="vertical" android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@mipmap/xc">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/xc">
 
 <TextView
     android:id="@+id/textView20"
@@ -11,13 +11,13 @@ android:background="@mipmap/xc">
     android:layout_height="wrap_content"
     android:background="@drawable/textfx"
     android:textColor="#900000"
-    android:textSize="20dp" />
+    android:textSize="20sp" />
 
-<ListView
-    android:id="@+id/listview"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true"
-    android:addStatesFromChildren="false"
-    android:dividerHeight="7dp" />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:addStatesFromChildren="false"
+        android:dividerHeight="7dp"
+        />
 </LinearLayout>
