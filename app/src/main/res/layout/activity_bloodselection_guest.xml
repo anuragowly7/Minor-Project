@@ -5,7 +5,7 @@
     android:id="@+id/activity_bloodselection_guest"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/xc"
+    android:background="@drawable/bg1"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -16,13 +16,11 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/spinner2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="26dp"
-        android:layout_marginStart="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_marginTop="125dp"
         android:text="@string/select_blood_group"
-        android:textColor="@android:color/background_light"
+        android:textColor="@color/primary"
         android:textSize="25sp" />
 
     <Button
@@ -42,10 +40,9 @@
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="340dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
         android:contentDescription="@string/todo"
         app:srcCompat="@drawable/bloodchart" />
 
@@ -55,7 +52,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="26dp"
         android:background="@drawable/mybtnselect"
         android:text="@string/submit"
         android:textSize="18sp" />
@@ -65,20 +61,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/imageView6"
-        android:layout_alignEnd="@+id/button13"
-        android:layout_alignRight="@+id/button13"
-        android:layout_marginEnd="-19dp"
-        android:layout_marginRight="-19dp"
+        android:layout_alignParentStart="true"
         android:background="@android:drawable/btn_dropdown" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="11dp"
+        android:layout_toStartOf="@+id/button9"
         android:clickable="false"
         android:duplicateParentState="false"
         android:text="@string/guest"

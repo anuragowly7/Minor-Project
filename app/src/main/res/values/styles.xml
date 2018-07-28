@@ -1,29 +1,29 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat">
         <!-- Customize your theme here. -->
-            <item name="colorPrimary">@color/colorPrimary</item>
-            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-            <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
 
-        </style>
+    </style>
 
-        <style name="FullscreenTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
-            <item name="android:actionBarStyle">@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar</item>
-            <item name="android:windowActionBarOverlay">true</item>
-            <item name="android:windowBackground">@null</item>
-            <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
-            <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
-        </style>
+    <style name="FullscreenTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:actionBarStyle">@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
 
-        <style name="FullscreenActionBarStyle" parent="Theme.AppCompat.DayNight.DarkActionBar">
-            <item name="android:background">@color/black_overlay</item>
-        </style>
+    <style name="FullscreenActionBarStyle" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
     Dark.ActionBa
-        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
 
-        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="MaterialDrawer.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
 
@@ -32,4 +32,8 @@
         <item name="color">@android:color/white</item>
 
     </style>
-    </resources>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated" tools:targetApi="lollipop">#148E13</item>
+    </style>
+</resources>

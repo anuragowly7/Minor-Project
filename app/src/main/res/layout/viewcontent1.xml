@@ -11,8 +11,8 @@
         android:alwaysDrawnWithCache="false"
         android:animateLayoutChanges="true"
         android:animationCache="true"
-        android:background="@mipmap/qdf"
-        android:entries="@color/colorPrimaryDark"
+        android:background="@color/primary"
+        android:entries="@color/primary"
         android:scrollbars="vertical"
         android:text="@color/colorPrimaryDark" />
 </LinearLayout>

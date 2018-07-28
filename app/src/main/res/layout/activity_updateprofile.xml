@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/xc"
+    android:background="@color/primary"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -62,13 +62,13 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView10"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/textView10"
         android:layout_marginBottom="150dp"
         android:text="@string/blood_group"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView10" />
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/button11"
@@ -88,61 +88,61 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/mybtnselect"
-        android:text="@string/logout"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="18dp" />
+        android:text="@string/logout" />
 
     <EditText
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView11"
+        android:layout_toLeftOf="@+id/button14"
         android:layout_toStartOf="@+id/button14"
         android:editable="true"
-        android:textColor="@android:color/white"
-        tools:ignore="Deprecated"
         android:inputType=""
-        android:layout_toLeftOf="@+id/button14" />
+        android:textColor="@android:color/white"
+        tools:ignore="Deprecated" />
 
     <EditText
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView13"
+        android:layout_toLeftOf="@+id/button14"
         android:layout_toStartOf="@+id/button14"
         android:editable="true"
-        android:textColor="@android:color/white"
-        tools:ignore="Deprecated"
         android:inputType=""
-        android:layout_toLeftOf="@+id/button14" />
+        android:textColor="@android:color/white"
+        tools:ignore="Deprecated" />
 
     <EditText
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView17"
+        android:layout_toLeftOf="@+id/button14"
         android:layout_toStartOf="@+id/button14"
         android:editable="true"
-        android:textColor="@android:color/white"
-        tools:ignore="Deprecated"
         android:inputType=""
-        android:layout_toLeftOf="@+id/button14" />
+        android:textColor="@android:color/white"
+        tools:ignore="Deprecated" />
 
     <EditText
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/button14"
         android:layout_toStartOf="@+id/button14"
         android:editable="true"
-        android:textColor="@android:color/white"
-        tools:ignore="Deprecated"
         android:inputType=""
-        android:layout_toLeftOf="@+id/button14" />
+        android:textColor="@android:color/white"
+        tools:ignore="Deprecated" />
 
     <EditText
         android:id="@+id/textView26"
@@ -152,31 +152,31 @@
         android:layout_alignStart="@+id/textView24"
         android:layout_alignTop="@+id/textView19"
         android:editable="true"
+        android:inputType=""
         android:textColor="@android:color/white"
-        tools:ignore="Deprecated"
-        android:inputType="" />
+        tools:ignore="Deprecated" />
 
     <TextView
         android:id="@+id/textView51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView10"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/textView10"
         android:layout_marginBottom="200dp"
         android:text="Address:"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/textView10" />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/textView54"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView51"
+        android:layout_toLeftOf="@+id/button14"
         android:layout_toStartOf="@+id/button14"
-        android:textColor="@android:color/white"
         android:inputType=""
-        android:layout_toLeftOf="@+id/button14" />
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/button30"

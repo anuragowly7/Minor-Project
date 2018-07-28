@@ -31,8 +31,9 @@
                 android:id="@+id/editText8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Blood"
+                android:hint="Email"
                 android:inputType="textEmailAddress"
+                android:text="Blood"
                 android:textColor="@color/accent"
                 android:textColorHint="#ffffff"
                 android:textColorLink="#ffffff" />
@@ -49,8 +50,9 @@
                 android:id="@+id/editText9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Blood"
+                android:hint="Password"
                 android:inputType="textPassword"
+                android:text="Blood"
                 android:textColor="@color/accent"
                 android:textColorHint="#ffffff"
                 android:textColorLink="#ffffff" />
