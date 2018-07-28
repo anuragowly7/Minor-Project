@@ -1,61 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_admin_login"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@mipmap/xc"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.dellpc.bloodbank.AdminLogin">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/primary"
+    android:fitsSystemWindows="true">
 
-    <TextView
-        android:id="@+id/textView42"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="53dp"
-        android:background="@drawable/gue"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="56dp">
 
-    <EditText
-        android:id="@+id/editText9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:ems="10"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:text="@string/blood"
-        android:textColor="@android:color/background_light"
-        android:textColorHint="@color/colorPrimaryDark" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/gue" />
 
-    <EditText
-        android:id="@+id/editText8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editText9"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:hint="@string/blood"
-        android:inputType="textPersonName"
-        android:text="@string/blood"
-        android:textColor="@android:color/background_light"
-        android:textColorHint="@color/colorPrimaryDark" />
+        <!--  Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
 
-    <Button
-        android:id="@+id/button21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText8"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="53dp"
-        android:background="@drawable/mybtnselect"
-        android:text="@string/login" />
-</RelativeLayout>
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Blood"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/accent"
+                android:textColorHint="#ffffff"
+                android:textColorLink="#ffffff" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--  Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Blood"
+                android:inputType="textPassword"
+                android:textColor="@color/accent"
+                android:textColorHint="#ffffff"
+                android:textColorLink="#ffffff" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button21"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/primary_darker"
+            android:padding="12dp"
+            android:text="Login"
+            android:textColor="@color/accent" />
+
+        <TextView
+            android:id="@+id/link_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="No User account yet? Create one"
+            android:textColor="@color/accent"
+            android:textSize="16dip" />
+
+    </LinearLayout>
+</ScrollView>

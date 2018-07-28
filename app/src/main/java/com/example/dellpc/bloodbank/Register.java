@@ -31,11 +31,11 @@ public class Register extends AppCompatActivity{
     ProgressDialog progressDialog;
     DatabaseReference databaseReference;
     FirebaseAuth firebaseAuth;
-    TextView mo;
+    TextView link;
     public EditText userid,password,name,dob,number,address;
     RadioButton male,female;
     public String sex="",bloodgrp="",phone="",birth="",useri="",pass="",nam="",add="";
-    Button home,reg;
+    Button reg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,18 +73,18 @@ public class Register extends AppCompatActivity{
         dob = (EditText) findViewById(R.id.editText6);
         number = (EditText) findViewById(R.id.editText7);
         address=(EditText)findViewById(R.id.editText99);
+        link=(TextView)findViewById(R.id.link_login);
         male = (RadioButton) findViewById(R.id.Male);
         female = (RadioButton) findViewById(R.id.female);
-        home = (Button) findViewById(R.id.button16);
-        mo=(TextView)findViewById(R.id.textView14);
         reg=(Button)findViewById(R.id.button5);
-        home.setOnClickListener(new View.OnClickListener() {
+        link.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Register.this, Homescreen.class);
+                Intent i = new Intent(Register.this,Loign.class);
                 startActivity(i);
             }
         });
+
         male.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -117,7 +117,7 @@ public class Register extends AppCompatActivity{
 
                     Toast.makeText(getApplicationContext(), "Enter All Fields", Toast.LENGTH_LONG).show();
                 } else if (phone.length() != 10) {
-                    mo.setText("Enter Valid Mobile Number");
+                    Toast.makeText(getApplicationContext(), "Enter Valid Mobile Number", Toast.LENGTH_LONG).show();
                 }
                 else if(pass.length()<6){
                     Toast.makeText(getApplicationContext(), "Password length less than 6", Toast.LENGTH_LONG).show();

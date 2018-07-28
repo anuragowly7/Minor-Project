@@ -4,7 +4,7 @@
     android:id="@+id/aboutus"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg1"
+    android:background="@color/primary"
     tools:layout_editor_absoluteY="81dp">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:padding="20dp"
         android:text="@string/blood_bank_app_is_a_federation_of_non_remunerated_voluntary_blood_donors_donor_s_organizations_clubs_and_associations_it_is_working_to_meet_the_needs_for_high_quality_human_blood_and_blood_products_by_promoting_the_regular_non_remunerated_voluntary_blood_donation_all_over_the_country"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/accent"
         android:textSize="24sp"
         android:textStyle="italic"
         tools:ignore="MissingConstraints"

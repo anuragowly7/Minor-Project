@@ -30,7 +30,7 @@ public class Loign extends AppCompatActivity {
     EditText lo,pa;
     DatabaseHandler db;
     ProgressDialog progressDialog;
-    TextView reset;
+    TextView reset,reg;
     Cursor cursor;
     DatabaseReference databaseReference;
     FirebaseAuth firebaseAuth;
@@ -47,7 +47,7 @@ public class Loign extends AppCompatActivity {
         reset=(TextView)findViewById(R.id.forget);
         pa=(EditText)findViewById(R.id.editText2);
         login=(Button)findViewById(R.id.button3);
-        register=(Button)findViewById(R.id.button4);
+        reg=(TextView)findViewById(R.id.text_reg);
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -130,11 +130,12 @@ public class Loign extends AppCompatActivity {
 
             }
         });
-        register.setOnClickListener(new View.OnClickListener() {
+        reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Loign.this,Register.class);
                 startActivity(i);
+                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
             }
         });
     }

@@ -9,11 +9,13 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class AdminLogin extends AppCompatActivity {
     Button login;
     EditText user,pass;
+    TextView link;
     ProgressDialog progressDialog,progressDialog1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +27,14 @@ public class AdminLogin extends AppCompatActivity {
         login=(Button)findViewById(R.id.button21);
         user=(EditText)findViewById(R.id.editText8);
         pass=(EditText)findViewById(R.id.editText9);
+        link=(TextView)findViewById(R.id.link_signup);
 
+        link.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(AdminLogin.this,Register.class);
+            }
+        });
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
