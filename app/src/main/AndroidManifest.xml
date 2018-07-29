@@ -46,6 +46,7 @@
         <activity android:name=".Admin" />
         <activity android:name=".AdminLogin" />
         <activity android:name=".AdminDonorInfo" />
+        <activity android:name=".viewdonors"/>
         <activity android:name=".DonorInfo_Guest" />
 
         <service android:name=".FirebaseMessagingService">

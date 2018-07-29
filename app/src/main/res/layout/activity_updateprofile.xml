@@ -20,7 +20,8 @@
         android:layout_marginTop="90dp"
         android:text="@string/name"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView13"
@@ -29,10 +30,11 @@
         android:layout_alignLeft="@+id/textView11"
         android:layout_alignStart="@+id/textView11"
         android:layout_below="@+id/textView11"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="@string/dob"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView17"
@@ -41,10 +43,11 @@
         android:layout_alignLeft="@+id/textView13"
         android:layout_alignStart="@+id/textView13"
         android:layout_below="@+id/textView13"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="@string/phone_number"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView18"
@@ -53,22 +56,24 @@
         android:layout_alignLeft="@+id/textView17"
         android:layout_alignStart="@+id/textView17"
         android:layout_below="@+id/textView17"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="@string/sex"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView10"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_marginBottom="150dp"
+        android:layout_alignLeft="@+id/textView51"
+        android:layout_alignStart="@+id/textView51"
+        android:layout_below="@+id/textView51"
+        android:layout_marginTop="30dp"
         android:text="@string/blood_group"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button11"
@@ -106,6 +111,7 @@
         android:editable="true"
         android:inputType=""
         android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
         tools:ignore="Deprecated" />
 
     <EditText
@@ -118,6 +124,7 @@
         android:editable="true"
         android:inputType=""
         android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
         tools:ignore="Deprecated" />
 
     <EditText
@@ -136,12 +143,12 @@
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toLeftOf="@+id/button14"
-        android:layout_toStartOf="@+id/button14"
+        android:layout_alignBaseline="@+id/textView18"
+        android:layout_alignStart="@+id/textView16"
         android:editable="true"
         android:inputType=""
         android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
         tools:ignore="Deprecated" />
 
     <EditText
@@ -154,19 +161,22 @@
         android:editable="true"
         android:inputType=""
         android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
         tools:ignore="Deprecated" />
 
     <TextView
         android:id="@+id/textView51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView10"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_marginBottom="200dp"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignParentBottom="false"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_below="@+id/textView18"
+        android:layout_marginTop="30dp"
         android:text="Address:"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/textView54"
@@ -176,7 +186,8 @@
         android:layout_toLeftOf="@+id/button14"
         android:layout_toStartOf="@+id/button14"
         android:inputType=""
-        android:textColor="@color/colorPrimaryDark" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button30"

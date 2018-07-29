@@ -60,9 +60,11 @@
         android:id="@+id/spinner2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/imageView6"
+        android:layout_above="@+id/textView6"
         android:layout_alignParentStart="true"
-        android:background="@android:drawable/btn_dropdown" />
+        android:layout_marginBottom="-125dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:theme="@style/Animation.AppCompat.DropDownUp" />
 
     <TextView
         android:id="@+id/textView2"

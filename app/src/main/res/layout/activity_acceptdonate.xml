@@ -23,7 +23,8 @@
                 android:layout_height="103dp"
                 android:layout_margin="15dp"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
 
             <Switch
                 android:id="@+id/switch4"

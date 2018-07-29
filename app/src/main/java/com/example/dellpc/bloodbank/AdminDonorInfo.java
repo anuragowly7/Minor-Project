@@ -50,13 +50,13 @@ public class AdminDonorInfo extends AppCompatActivity {
                             String dob=snapshot.child("dob").getValue(String.class);
                             String sex=snapshot.child("sex").getValue(String.class);
                             String phone=snapshot.child("number").getValue(String.class);
-                            String donor=snapshot.child("donor").getValue(String.class);
+                            String address=snapshot.child("address").getValue(String.class);
                             a.setText(name);
                             b.setText(dob);
                             c.setText(phone);
                             d.setText(sex);
                             e.setText(blood);
-                            f.setText(donor);
+                            f.setText(address);
                         }
 
                     }
@@ -77,7 +77,7 @@ public class AdminDonorInfo extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
 
-                                Intent i = new Intent(AdminDonorInfo.this,Admin.class);
+                                Intent i = new Intent(AdminDonorInfo.this,Acceptdonate.class);
                                 startActivity(i);
                             }
                         })

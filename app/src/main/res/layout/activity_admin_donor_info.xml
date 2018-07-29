@@ -17,7 +17,8 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView21"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
         android:textColor="@color/colorPrimaryDark"/>
         android:textColor="@color/colorPrimaryDark"/>
 
@@ -28,7 +29,8 @@
         android:layout_alignBottom="@+id/textView29"
         android:layout_alignLeft="@+id/textView33"
         android:layout_alignStart="@+id/textView33"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView35"
@@ -38,7 +40,8 @@
         android:layout_alignBottom="@+id/textView28"
         android:layout_alignLeft="@+id/textView36"
         android:layout_alignStart="@+id/textView36"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView34"
@@ -48,7 +51,8 @@
         android:layout_alignBottom="@+id/textView27"
         android:layout_alignLeft="@+id/textView35"
         android:layout_alignStart="@+id/textView35"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView37"
@@ -58,7 +62,8 @@
         android:layout_alignBottom="@+id/textView30"
         android:layout_alignLeft="@+id/textView36"
         android:layout_alignStart="@+id/textView36"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView28"
@@ -69,7 +74,9 @@
         android:layout_below="@+id/textView27"
         android:layout_marginTop="24dp"
         android:text="Sex"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView33"
@@ -79,7 +86,8 @@
         android:layout_alignBottom="@+id/textView25"
         android:layout_alignLeft="@+id/textView32"
         android:layout_alignStart="@+id/textView32"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView27"
@@ -88,7 +96,9 @@
         android:layout_below="@+id/textView25"
         android:layout_marginTop="27dp"
         android:text="Number"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView21"
@@ -99,7 +109,9 @@
         android:layout_below="@+id/textView38"
         android:layout_marginTop="87dp"
         android:text="Name"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView25"
@@ -110,7 +122,9 @@
         android:layout_below="@+id/textView21"
         android:layout_marginTop="31dp"
         android:text="DOB"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView29"
@@ -121,7 +135,9 @@
         android:layout_below="@+id/textView28"
         android:layout_marginTop="26dp"
         android:text="Blood Group"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView30"
@@ -131,8 +147,10 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView29"
         android:layout_marginTop="24dp"
-        android:text="Donor"
-        android:textColor="@color/colorPrimaryDark" />
+        android:text="Address"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView38"

@@ -50,6 +50,7 @@ public class Acceptdonate extends AppCompatActivity {
         wel=(TextView)findViewById(R.id.textView15);
         profile=(Button)findViewById(R.id.button27);
         delete=(Button)findViewById(R.id.button29);
+        donate=(Button)findViewById(R.id.button77);
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         ccc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,6 +82,17 @@ public class Acceptdonate extends AppCompatActivity {
 
                     }
                 });
+
+        donate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                progressDialog.setMessage("Retrieving all users...");
+                progressDialog.show();
+                Intent i = new Intent(Acceptdonate.this,viewdonors.class);
+                startActivity(i);
+                progressDialog.hide();
+            }
+        });
 /*        donate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
