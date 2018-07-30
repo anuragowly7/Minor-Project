@@ -34,15 +34,12 @@
         android:text="@string/show_all_blood"
         android:textSize="24sp" />
 
-    <ImageView
+
+    <pl.droidsonroids.gif.GifImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/todo"
-        app:srcCompat="@drawable/ad" />
+        android:src="@drawable/ad" />
 
     <EditText
         android:id="@+id/editText10"
@@ -55,12 +52,13 @@
         android:ems="10"
         android:focusable="false"
         android:focusableInTouchMode="false"
+        android:fontFamily="monospace"
+        android:gravity="center"
         android:inputType="textPersonName"
         android:text="@string/guest"
-        android:gravity="center"
         android:textColor="@android:color/holo_blue_light"
         android:textSize="36sp"
-        android:textStyle="bold|italic" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button26"

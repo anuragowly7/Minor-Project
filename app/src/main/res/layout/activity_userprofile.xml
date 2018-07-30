@@ -34,7 +34,7 @@
         android:layout_alignStart="@+id/textView10"
         android:layout_below="@+id/textView10"
         android:layout_marginTop="40dp"
-        android:text="@string/name"
+        android:text="Name :"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -47,7 +47,7 @@
         android:layout_alignStart="@+id/textView11"
         android:layout_below="@+id/textView11"
         android:layout_marginTop="20dp"
-        android:text="@string/dob"
+        android:text="DOB :"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -60,7 +60,7 @@
         android:layout_alignStart="@+id/textView13"
         android:layout_below="@+id/textView13"
         android:layout_marginTop="20dp"
-        android:text="@string/phone_number"
+        android:text="Phone Number :"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -73,7 +73,7 @@
         android:layout_alignStart="@+id/textView17"
         android:layout_below="@+id/textView17"
         android:layout_marginTop="20dp"
-        android:text="@string/sex"
+        android:text="Sex :"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -86,7 +86,7 @@
         android:layout_alignStart="@+id/textView51"
         android:layout_below="@+id/textView51"
         android:layout_marginTop="20dp"
-        android:text="@string/blood_group"
+        android:text="Blood Group :"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -108,9 +108,8 @@
         android:id="@+id/button14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView10"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/textView10"
         android:background="@drawable/mybtnselect"
         android:text="@string/logout" />
 
@@ -177,7 +176,7 @@
         android:layout_alignStart="@+id/textView18"
         android:layout_below="@+id/textView18"
         android:layout_marginTop="20dp"
-        android:text="@string/address"
+        android:text="Address :"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold" />

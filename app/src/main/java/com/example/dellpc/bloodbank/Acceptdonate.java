@@ -1,6 +1,8 @@
 package com.example.dellpc.bloodbank;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -228,37 +230,59 @@ public class Acceptdonate extends AppCompatActivity {
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-           FirebaseDatabase.getInstance().getReference("Registerdata").orderByChild("email").equalTo(email).
-            addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    for(DataSnapshot snapshot:dataSnapshot.getChildren()){
-                        String key =snapshot.getRef().getKey();
-                        DatabaseReference don = FirebaseDatabase.getInstance().getReference("Registerdata");
-                        don.child(key).removeValue();
-                        us.delete()
-                                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                    @Override
-                                    public void onComplete(@NonNull Task<Void> task) {
-                                        if (task.isSuccessful()) {
-                                            String TAG="";
-                                            Log.d(TAG, "User account deleted.");
-                                        }
-                                    }
-                                });
-                    }
-                }
 
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(Acceptdonate.this);
 
-                }
-            });
+                builder
+                        .setTitle("Deactivating Account")
+                        .setMessage("Are you sure. You want to deactivate??")
+                        .setPositiveButton("Yes",  new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int id) {
 
-                progressDialog1.hide();
-                Toast.makeText(getApplicationContext(),"User Account Removed ",Toast.LENGTH_LONG).show();
-                Intent i = new Intent(Acceptdonate.this,Homescreen.class);
-                startActivity(i);
+
+
+                                FirebaseDatabase.getInstance().getReference("Registerdata").orderByChild("email").equalTo(email).
+                                        addListenerForSingleValueEvent(new ValueEventListener() {
+                                            @Override
+                                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                                for(DataSnapshot snapshot:dataSnapshot.getChildren()){
+                                                    String key =snapshot.getRef().getKey();
+                                                    DatabaseReference don = FirebaseDatabase.getInstance().getReference("Registerdata");
+                                                    don.child(key).removeValue();
+                                                    us.delete()
+                                                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                                @Override
+                                                                public void onComplete(@NonNull Task<Void> task) {
+                                                                    if (task.isSuccessful()) {
+                                                                        String TAG="";
+                                                                        Log.d(TAG, "User account deleted.");
+                                                                    }
+                                                                }
+                                                            });
+                                                }
+                                            }
+
+                                            @Override
+                                            public void onCancelled(DatabaseError databaseError) {
+
+                                            }
+                                        });
+
+                                progressDialog1.hide();
+                                Toast.makeText(getApplicationContext(),"User Account Removed ",Toast.LENGTH_LONG).show();
+                                Intent i = new Intent(Acceptdonate.this,Homescreen.class);
+                                startActivity(i);
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,int id) {
+                                dialog.cancel();
+                            }
+                        })
+                        .show();
+
         }
     });
 
