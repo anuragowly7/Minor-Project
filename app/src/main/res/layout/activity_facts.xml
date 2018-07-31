@@ -12,17 +12,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.dellpc.bloodbank.Donor">
 
-    <pl.droidsonroids.gif.GifImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="false"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="11dp"
-        android:adjustViewBounds="true"
-        android:cropToPadding="false"
-        android:scaleType="fitCenter"
-        android:src="@drawable/fact" />
 
     <TextView
         android:id="@+id/textView"
@@ -30,8 +19,44 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="QUICK FACTS "
+        android:gravity="center"
+        android:text="@string/quick_facts"
         android:textColor="@color/accent"
         android:textSize="30sp"
         android:textStyle="bold" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fact" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="-195dp"
+        android:textColor="@color/accent"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="195dp"
+        android:gravity="center"
+        android:text="Blood Events:"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>

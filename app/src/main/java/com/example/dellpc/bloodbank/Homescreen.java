@@ -48,7 +48,7 @@ public class Homescreen extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Homescreen.this, Donor.class);
+                Intent i = new Intent(Homescreen.this, facts.class);
                 startActivity(i);
             }
         });

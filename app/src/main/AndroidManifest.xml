@@ -71,6 +71,7 @@
         <activity android:name=".bloodselection_guest" />
         <activity android:name=".userprofile" />
         <activity android:name=".updateprofile" />
+        <activity android:name=".facts"/>
     </application>
 
 </manifest>
