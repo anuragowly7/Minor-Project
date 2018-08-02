@@ -185,6 +185,7 @@
     <string name="action_settings">Settings</string>
     <string name="home" />
     <string name="quick_facts">QUICK FACTS</string>
+    <string name="copy_right" />
 
 
 </resources>
