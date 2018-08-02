@@ -15,9 +15,10 @@
 
     <ListView
         android:id="@+id/listview"
+        style="@android:style/Widget.ListView.White"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:addStatesFromChildren="false"
-        android:dividerHeight="7dp"
-        />
+        android:dividerHeight="2dp"
+        android:textSize="18sp" />
 </LinearLayout>

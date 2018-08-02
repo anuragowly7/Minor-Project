@@ -29,8 +29,8 @@
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentEnd="true"
         android:adjustViewBounds="true"
         android:cropToPadding="false"
         android:scaleType="fitCenter"
@@ -40,20 +40,19 @@
         android:id="@+id/welcome_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/textView4"
-        android:layout_marginTop="-195dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="164dp"
         android:textColor="@color/accent"
-        android:textSize="24sp"
-        android:textStyle="bold|italic" />
+        android:textSize="18sp"
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/welcome_text"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="195dp"
         android:gravity="center"
         android:text="Blood Events:"
         android:textSize="30sp"

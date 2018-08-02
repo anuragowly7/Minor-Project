@@ -9,9 +9,11 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -22,8 +24,9 @@ public class updateprofile extends AppCompatActivity {
     Button back,logout,update;
     TextView a,b,c,d,e,f;
     ProgressDialog progressDialog;
-    String uid;
+    String email;
     FirebaseAuth firebaseAuth;
+    public String sex="",bloodgrp="",phone="",birth="",useri="",pass="",nam="",add="";
     DatabaseReference databaseReference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +34,7 @@ public class updateprofile extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_updateprofile);
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String ck = "";
         if (user != null) {
             ck = user.getEmail();
@@ -91,8 +94,35 @@ public class updateprofile extends AppCompatActivity {
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                databaseReference = FirebaseDatabase.getInstance().getReference("Registerdata");
+                email = user.getEmail();
+                FirebaseDatabase.getInstance().getReference("Registerdata").orderByChild("email").equalTo(email).
+                        addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                for(DataSnapshot snapshot:dataSnapshot.getChildren()){
+                                    String key =snapshot.getRef().getKey();
+                                    DatabaseReference don = FirebaseDatabase.getInstance().getReference("Registerdata");
+                                    don.child(key).child("name").setValue(a.getText().toString());
+                                    don.child(key).child("dob").setValue(b.getText().toString());
+                                    don.child(key).child("number").setValue(c.getText().toString());
+                                    don.child(key).child("sex").setValue(d.getText().toString());
+                                    don.child(key).child("bloodgrp").setValue(e.getText().toString());
+                                    don.child(key).child("address").setValue(f.getText().toString());
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(DatabaseError databaseError) {
+
+                            }
+                        });
+                Toast.makeText(getApplicationContext(),"Your Profile has been updated",Toast.LENGTH_LONG).show();
+                progressDialog.hide();
 
             }
+
         });
 
 

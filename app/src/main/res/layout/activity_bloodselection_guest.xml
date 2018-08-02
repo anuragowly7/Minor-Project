@@ -16,9 +16,9 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/imageView6"
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="115dp"
         android:text="@string/select_blood_group"
         android:textColor="@color/primary"
         android:textSize="25sp" />
@@ -43,7 +43,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="32dp"
         android:contentDescription="@string/todo"
         app:srcCompat="@drawable/chart" />
 
@@ -59,11 +58,11 @@
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView6"
+        android:layout_width="89dp"
+        android:layout_height="30dp"
         android:layout_alignStart="@+id/button13"
-        android:background="@android:drawable/btn_dropdown"
+        android:layout_alignTop="@+id/textView6"
+        android:background="@color/button"
         android:theme="@style/Animation.AppCompat.DropDownUp" />
 
     <TextView

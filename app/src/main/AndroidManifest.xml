@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
+        android:screenOrientation="portrait"
         android:allowBackup="true"
         android:background="@drawable/mybtnselect"
         android:icon="@mipmap/logo"
@@ -24,6 +25,7 @@
 
         <activity
             android:name=".SplashScreen"
+            android:screenOrientation="portrait"
             android:background="@drawable/mybtnselect"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/FullscreenTheme">
@@ -33,21 +35,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Homescreen" />
-        <activity android:name=".DonorInfo" />
-        <activity android:name=".ViewListContents" />
-        <activity android:name=".ViewListContents_Guest" />
-        <activity android:name=".ViewListContents1" />
-        <activity android:name=".Loign" />
-        <activity android:name=".Register" />
+        <activity android:name=".Homescreen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DonorInfo"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ViewListContents"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ViewListContents_Guest"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ViewListContents1"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Loign"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Register"
+            android:screenOrientation="portrait"/>
         <activity android:name=".Acceptdonate" />
         <activity android:name=".Donor" />
-        <activity android:name=".bloodselection" />
-        <activity android:name=".Admin" />
-        <activity android:name=".AdminLogin" />
-        <activity android:name=".AdminDonorInfo" />
-        <activity android:name=".viewdonors"/>
-        <activity android:name=".DonorInfo_Guest" />
+        <activity android:name=".bloodselection"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AdminLogin"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AdminDonorInfo"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".viewdonors"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DonorInfo_Guest"
+            android:screenOrientation="portrait"/>
 
         <service android:name=".FirebaseMessagingService">
             <intent-filter>
@@ -60,18 +75,22 @@
             android:resource="@color/red" />
 
         <activity
+            android:screenOrientation="portrait"
             android:name="com.google.android.gms.ads.AdActivity"
             android:background="@drawable/mybtnselect"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
-        <activity android:name=".chat" />
-        <activity android:name=".emergency" />
-        <activity android:name=".aboutus" />
-        <activity android:name=".Listdonor" />
-        <activity android:name=".bloodselection_guest" />
-        <activity android:name=".userprofile" />
-        <activity android:name=".updateprofile" />
-        <activity android:name=".facts"/>
+        <activity android:name=".chat"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".emergency"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".aboutus"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Listdonor" android:screenOrientation="portrait" />
+        <activity android:name=".bloodselection_guest"  android:screenOrientation="portrait" />
+        <activity android:name=".userprofile"  android:screenOrientation="portrait"/>
+        <activity android:name=".updateprofile"  android:screenOrientation="portrait"/>
+        <activity android:name=".facts" android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg1"
+    android:background="@color/primary"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -19,7 +19,7 @@
         android:layout_below="@+id/textView10"
         android:layout_marginTop="90dp"
         android:text="@string/name"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/accent"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -32,7 +32,7 @@
         android:layout_below="@+id/textView11"
         android:layout_marginTop="30dp"
         android:text="@string/dob"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/accent"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -45,7 +45,7 @@
         android:layout_below="@+id/textView13"
         android:layout_marginTop="30dp"
         android:text="@string/phone_number"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/accent"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -58,7 +58,7 @@
         android:layout_below="@+id/textView17"
         android:layout_marginTop="30dp"
         android:text="@string/sex"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/accent"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -71,7 +71,7 @@
         android:layout_below="@+id/textView51"
         android:layout_marginTop="30dp"
         android:text="@string/blood_group"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/accent"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -109,8 +109,8 @@
         android:layout_toLeftOf="@+id/button14"
         android:layout_toStartOf="@+id/button14"
         android:editable="true"
-        android:inputType=""
-        android:textColor="@color/colorPrimaryDark"
+        android:inputType="text"
+        android:textColor="@color/accent"
         android:textStyle="bold"
         tools:ignore="Deprecated" />
 
@@ -122,8 +122,8 @@
         android:layout_toLeftOf="@+id/button14"
         android:layout_toStartOf="@+id/button14"
         android:editable="true"
-        android:inputType=""
-        android:textColor="@color/colorPrimaryDark"
+        android:inputType="date"
+        android:textColor="@color/accent"
         android:textStyle="bold"
         tools:ignore="Deprecated" />
 
@@ -135,8 +135,8 @@
         android:layout_toLeftOf="@+id/button14"
         android:layout_toStartOf="@+id/button14"
         android:editable="true"
-        android:inputType=""
-        android:textColor="@color/colorPrimaryDark"
+        android:inputType="phone"
+        android:textColor="@color/accent"
         tools:ignore="Deprecated" />
 
     <EditText
@@ -144,10 +144,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView18"
+        android:layout_alignLeft="@+id/button14"
         android:layout_alignStart="@+id/textView16"
         android:editable="true"
-        android:inputType=""
-        android:textColor="@color/colorPrimaryDark"
+        android:inputType="text"
+        android:textColor="@color/accent"
         android:textStyle="bold"
         tools:ignore="Deprecated" />
 
@@ -155,12 +156,12 @@
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignLeft="@+id/button14"
         android:layout_alignStart="@+id/textView24"
-        android:layout_alignTop="@+id/textView19"
         android:editable="true"
-        android:inputType=""
-        android:textColor="@color/colorPrimaryDark"
+        android:inputType="text"
+        android:textColor="@color/accent"
         android:textStyle="bold"
         tools:ignore="Deprecated" />
 
@@ -174,7 +175,7 @@
         android:layout_below="@+id/textView18"
         android:layout_marginTop="30dp"
         android:text="Address:"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/accent"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -185,8 +186,8 @@
         android:layout_alignBaseline="@+id/textView51"
         android:layout_toLeftOf="@+id/button14"
         android:layout_toStartOf="@+id/button14"
-        android:inputType=""
-        android:textColor="@color/colorPrimaryDark"
+        android:inputType="text"
+        android:textColor="@color/accent"
         android:textStyle="bold" />
 
     <Button
